@@ -242,8 +242,8 @@ nav {
 
 .about-us-btn {
   display: inline-block;
-  background-color: #ff5a5f; /* Change the background color as needed */
-  color: #ffffff;
+  background-color: #FDB515;
+  color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
@@ -256,6 +256,11 @@ nav {
   padding-right: 2rem;
   padding-bottom: 1rem;
 }
+
+.about-us-btn:hover {
+    background-color: #fca501;
+}
+
 
 .follow-us {
 padding: 3rem;
@@ -414,5 +419,68 @@ font-size: 1rem;
     flex-direction: column;
   }
 }
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FDB515;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #fca501;
+}
+
+
+
 
 
